@@ -1,0 +1,16 @@
+6803
+====
+
+This is included as a public archive of the work I did aged 17-18 on an emulator for the Motorola 6803. The emulator was designed to help debug some code I was writing for an A Level project, and to give me a greater understanding of the microprocessor as a whole. 
+
+The code is currently unfinished (a fair portion of the ALU has yet to be written) and is tuned (in the Makefile) to compile on OS X (although very little effort would be required to get this to compile on any Unix/Linux system).
+
+The emulator was never designed to handle interrupts, it does however support the full memory map, so you can have code at the interrupt vector it will just not get called.
+
+This project is unlikely to get off the ground again, but it was interesting, and maybe some of the code will be of use to someone looking to do a similar project.
+
+tl;dr
+=====
+# get on a os x/darwin machine or hack the Makefile
+make clean all
+./MC6803_TEST
